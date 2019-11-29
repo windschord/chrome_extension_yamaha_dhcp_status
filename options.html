@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>DHCP release checker option page</title>
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body">
+  <h1>DHCP release checker option page</h1>
+
+  <lu>
+    <li>
+      <label for="prefix">RTX-810 URL</label>
+      <div class="inputValue">
+        <select name="prefix" id="prefix">
+          <option value="http">http</option>
+          <option value="https">https</option>
+        </select>
+        ://<input id="baseUrl" type="text" maxLength="100" value="192.168.0.1" />
+      </div>
+    </li>
+    <li>
+      <label for="username">RTX-810 Username</label>
+      <div class="inputValue"><input id="username" type="text" maxLength="100" /></div>
+    </li>
+    <li>
+      <label for="password">RTX-810 Paaword</label>
+      <div class="inputValue"><input id="password" type="password" maxLength="100" /></div>
+    </li>
+  </lu>
+  <p><button id="close_btn">保存</button></p>
+  <div id="result"></div>
+  <script type="text/javascript" src="options.js"></script>
+  </body>
+</html>
